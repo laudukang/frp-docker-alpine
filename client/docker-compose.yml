@@ -4,6 +4,8 @@ services:
     image: laudukang/frp:latest
     command: /work/frp/frpc -c /data/frpc.ini
     restart: always
+    ports:
+      - 7400:7400
     volumes:
       - ./frpc.ini:/data/frpc.ini
       - ./logs:/data/logs
