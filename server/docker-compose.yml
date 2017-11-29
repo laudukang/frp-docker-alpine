@@ -1,0 +1,13 @@
+version: '2'
+services:
+  frps:
+    image: laudukang/frp:latest
+    command: /work/frp/frps -c /data/frps.ini
+    ports:
+      - 7000:7000
+      - 7500:7500
+      - 6000:6000
+    restart: always
+    volumes:
+      - ./frps.ini:/data/frps.ini
+      - ./logs:/data/logs

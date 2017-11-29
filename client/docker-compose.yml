@@ -1,0 +1,9 @@
+version: '2'
+services:
+  frpc:
+    image: laudukang/frp:latest
+    command: /work/frp/frpc -c /data/frpc.ini
+    restart: always
+    volumes:
+      - ./frpc.ini:/data/frpc.ini
+      - ./logs:/data/logs
