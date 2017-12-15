@@ -1,6 +1,8 @@
 version: '2'
 services:
   frps:
+    container_name: frp-server
+    domainname: frp-server
     image: laudukang/frp:latest
     command: /work/frp/frps -c /data/frps.ini
     ports:
