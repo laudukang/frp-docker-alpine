@@ -4,7 +4,7 @@ MAINTAINER laudukang <laudukang@gmail.com>
 
 ENV WORK_PATH /work
 ENV TZ 'Asia/Shanghai'
-ENV FRP_VERSION 0.13.0
+ENV FRP_VERSION 0.15.1
 
 RUN mkdir -p $WORK_PATH
 
