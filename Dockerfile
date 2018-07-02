@@ -1,10 +1,10 @@
 FROM alpine:latest
 
-MAINTAINER laudukang <laudukang@gmail.com>
+LABEL laudukang="laudukang@gmail.com"
 
 ENV WORK_PATH /work
 ENV TZ 'Asia/Shanghai'
-ENV FRP_VERSION 0.15.1
+ENV FRP_VERSION 0.20.0
 
 RUN mkdir -p $WORK_PATH
 
