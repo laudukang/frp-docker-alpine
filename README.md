@@ -17,6 +17,8 @@ build frp image
 cd frp-docker-alpine
 docker build -t laudukang/frp:latest --rm .
 
+docker network create br0
+
 cd server
 docker-compose up -d
 ```
